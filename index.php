@@ -20,4 +20,6 @@ $q .= "FROM participants";
 $result = mysqli_query($link, $q);
 
 while($row = mysqli_fetch_array($result))
+{
     echo $row["email"]."<br />";
+}
